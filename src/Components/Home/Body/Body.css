@@ -1,0 +1,17 @@
+h5{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card-style:hover{
+    background-color:grey;
+    color: white;
+}
+
+.card-text{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn-style:hover{
+    background-color: whitesmoke;
+    color: #005792;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
