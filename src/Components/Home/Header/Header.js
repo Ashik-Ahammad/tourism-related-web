@@ -4,8 +4,12 @@ import { Container, Form, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 import logo from '../../../images/logo.png'
+import useAuth from '../../../Hooks/useAuth';
 
 const Header = () => {
+
+    const { user, logOut } = useAuth();
+
     const activeStyle = {
         fontWeight: "bold",
         color: "red"
@@ -34,9 +38,18 @@ const Header = () => {
                         </Nav>
                         <Form className="d-flex">
                             <NavLink className="nav-style1" activeStyle={activeStyle} to="/home">HOME</NavLink>
-                            <NavLink className="nav-style2" activeStyle={activeStyle} to="/order">BOOK</NavLink>
-                            <NavLink className="nav-style3" activeStyle={activeStyle} to="/mnageorder">MANAGE BOOKINGS</NavLink>
-                            <NavLink className="nav-style4" activeStyle={activeStyle} to="/Login">LOGIN</NavLink>
+
+                            <NavLink className="nav-style3" activeStyle={activeStyle} to="/manageorder">MANAGE ORDER</NavLink>
+                            <NavLink className="nav-style4" activeStyle={activeStyle} to="/addService">ADD NEW SERVICE</NavLink>
+                            <small className="text-warning">{user.displayName}</small>
+
+
+                            {
+                                user.email ?
+                                    <button className="btn btn-white btn-sm m-0 p-0" onClick={logOut}><span className="text-danger border border-3">Log Out</span></button>
+                                    :
+                                    <NavLink className="nav-style4" activeStyle={activeStyle} to="/login">Login</NavLink>
+                            }
                         </Form>
                     </Navbar.Collapse>
                 </Container>

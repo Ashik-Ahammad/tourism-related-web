@@ -1,0 +1,33 @@
+.add-booking form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border: 1px solid crimson;
+    border-radius: 15px;
+    background-color:crimson;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 5px;
+}
+
+
+
+
+.add-booking form input, textarea{
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-sub{
+    background-color: brown;
+    color: aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.btn-sub:hover{
+    background-color: skyblue;
+    color: black;
+}

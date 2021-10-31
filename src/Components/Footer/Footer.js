@@ -5,6 +5,7 @@ import footer from '../../images/footer.png'
 const Footer = () => {
     return (
         <div>
+            <hr />
             <Container className="mt-5">
                 <Row justify-content-center >
 
