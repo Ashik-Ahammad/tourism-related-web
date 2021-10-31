@@ -10,8 +10,13 @@ h5{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.btn-style{
+    text-decoration: none;
+}
+
 .btn-style:hover{
     background-color: whitesmoke;
     color: #005792;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
 }

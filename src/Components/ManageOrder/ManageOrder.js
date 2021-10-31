@@ -42,7 +42,7 @@ const ManageOrder = () => {
                     users.map(user => <li className="my-3 border border-2"
                         key={user._id}
                     >Name - {user.name} || Email  {user.email} || OrderID - {user.id}
-                        <button onClick={() => handleDeleteUser(user._id)} className="btn-danger my-3 ms-5">Delete X</button>
+                        <button onClick={() => handleDeleteUser(user._id)} className="btn-danger my-3 ms-5">Delete <span className="text-warning">X</span></button>
                     </li>)
                 }
             </ul>

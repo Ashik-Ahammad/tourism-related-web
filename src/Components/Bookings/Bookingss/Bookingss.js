@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
 import logo from '../../../images/logo.png'
 import axios from 'axios';
+import './Bookingss.css'
 
 
 const Bookingss = () => {

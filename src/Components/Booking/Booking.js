@@ -10,7 +10,7 @@ const Booking = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('http://localhost:5000/users', data)
+        axios.post('https://fathomless-plains-36328.herokuapp.com/users', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Service Added Successful.');

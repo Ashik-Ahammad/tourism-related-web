@@ -21,7 +21,7 @@ const AddService = () => {
 
     return (
         <div className="add-service mb-5 pb-5">
-            <h3> Add a new service...</h3>
+            <h3 className="text-secondary bg-light mb-5"> ADD NEW SERVICE </h3>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input {...register("name")} placeholder="Name" required />
                 <textarea {...register("description")} placeholder="Description" required />
