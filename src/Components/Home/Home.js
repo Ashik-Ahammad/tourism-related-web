@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Accordion, Carousel, Col, Container, Row } from 'react-bootstrap';
+import { Accordion, Carousel, Col, Container, Row, Spinner } from 'react-bootstrap';
 import image1 from '../../images/c3.jpg'
 import image2 from '../../images/c1.jpg'
 import image3 from '../../images/c2.jpg'
@@ -32,7 +32,7 @@ const Home = () => {
                             />
                             <Carousel.Caption>
                                 <h3 className="text-warning">Venice,ITALY</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                <p>Venice, the capital of northern Italy’s Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -60,7 +60,7 @@ const Home = () => {
 
                             <Carousel.Caption>
                                 <h3 className="text-dark">Santorini,GREECE</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <p>Santorini is one of the Cyclades islands in the Aegean Sea. It was devastated by a volcanic eruption in the 16th century BC.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -74,7 +74,7 @@ const Home = () => {
 
                             <Carousel.Caption>
                                 <h3 className="text-dark">Tsongo Lake,SIKKIM</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <p>Tsomgo Lake, also known as Tsongmo Lake or Changgu Lake, is a glacial lake in the East Sikkim.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -88,7 +88,7 @@ const Home = () => {
 
                             <Carousel.Caption>
                                 <h3 className="text-warning">Shimla,Himachal Pradesh,INDIA</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <p>Shimla is the capital of the northern Indian state of Himachal Pradesh, in the Himalayan foothills.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -102,22 +102,29 @@ const Home = () => {
 
                             <Carousel.Caption>
                                 <h3 className="text-warning">Saint Martin,BAY of BENGAL</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <p>St. Martin's Island is a small island in the northeastern part of the Bay of Bengal.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
                 </div>
                 <h1 className="text-primary">M A R S - T R A V E L - H E L P S - Y O U - W I T H</h1>
-                <div className="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 ">
 
-                    {
-                        test.map(tests => <Body
-                            key={tests.id}
-                            tests={tests}
-                        ></Body>)
-                    }
 
-                </div>
+                {
+                    test.length === 0 ?
+                        <Spinner animation="border" />
+                        :
+
+                        <div className="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 ">
+
+                            {
+                                test.map(tests => <Body
+                                    key={tests.id}
+                                    tests={tests}
+                                ></Body>)
+                            }
+
+                        </div>}
             </div>
 
             <div className="mx-5 my-4">
