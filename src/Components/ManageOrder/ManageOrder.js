@@ -15,7 +15,7 @@ const ManageOrder = () => {
     const handleDeleteUser = id => {
         const proceed = window.confirm('!!! Are you sure, you want delete permanently?')
         if (proceed) {
-            const url = `http://localhost:5000/users/${id}`;
+            const url = `https://fathomless-plains-36328.herokuapp.com/users/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -31,7 +31,7 @@ const ManageOrder = () => {
     }
 
     return (
-        <div className="container">
+        <div className="container mb-5 pb-5">
             <h4 className="text-primary">Orders and Customers</h4>
 
             <br />

@@ -8,9 +8,9 @@ import ManageOrder from './Components/ManageOrder/ManageOrder';
 import Login from './Components/Login/Login';
 import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
-import Booking from './Components/Booking/Booking';
 import Bookingss from './Components/Bookings/Bookingss/Bookingss';
 import AddService from './Components/AddService/AddService';
+import NotFound from './Components/NotFound/NotFound';
 
 
 function App() {
@@ -39,6 +39,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
         </Router>

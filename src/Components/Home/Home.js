@@ -124,7 +124,7 @@ const Home = () => {
                 <Accordion defaultActiveKey="0" flush>
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>Travel Blog 1</Accordion.Header>
-                        <Accordion.Body>
+                        <Accordion.Body className="text-success">
                             What I love about it: Anywhere We Roam may seem like a typical clean and minimal travel blog but this UK-based travel blog runs by Paul and Mark is a great example of how photos speaks a thousand words.
 
                             The layout of the travel blog merely serves as a white canvas to emphasize the atmospheric and immersive photography that Anywhere We Roam is a master at. Their photography and writings are top-notch and has the ability to transport you to the location in question.
@@ -134,7 +134,7 @@ const Home = () => {
                     </Accordion.Item>
                     <Accordion.Item eventKey="1">
                         <Accordion.Header>Travel Blog 2</Accordion.Header>
-                        <Accordion.Body>
+                        <Accordion.Body className="text-success">
                             What I love about it: As you know, I am a sucker for a well-designed website and one of the travel platform that have always been on my radar is Maptia, a platform for travelers and explorers to document and capture the world around them.
 
                             Maptia has not been updating as regularly as I had hope for but even then, the design they had come up with years ago is timeless and still stand as one of the best well-designed travel websites out there.
@@ -146,7 +146,7 @@ const Home = () => {
                     </Accordion.Item>
                     <Accordion.Item eventKey="2">
                         <Accordion.Header>Travel Blog 3</Accordion.Header>
-                        <Accordion.Body>
+                        <Accordion.Body className="text-success">
                             What I love about it: I first discovered about IFLY Magazine when I flew with KLM to Europe in 2018 and as they often send out newsletters to their fliers featuring several locations for them to travel to next, they introduced me to IFLY.
 
                             IFLY Magazine is an online travel magazine operated by the Dutch Airlines, KLM, that combines the professionally shot photographs you often come to expect from travel magazines on an airplane, the use of interactive media such as sound and videos, and travel tips and tricks that are universally useful to all types of travelers.
@@ -158,7 +158,7 @@ const Home = () => {
                     </Accordion.Item>
                     <Accordion.Item eventKey="3">
                         <Accordion.Header>Travel Blog 4</Accordion.Header>
-                        <Accordion.Body>
+                        <Accordion.Body className="text-success">
                             A crisp and clean colorful layout, water-colored headlines, a well-organized structure, and a ton of well-written travel guides, Indie Traveller is an excellent example of a travel blog that maintain its unique identity without sacrificing the usefulness of the content.
 
                             What I love about it: Indie Traveller is run by Marek Bron since 2012 and what I like most about the design is its play on the color palette, mixing contrast and subtle colors together in a way that made the travel blog stands out from the rest.
@@ -175,7 +175,7 @@ const Home = () => {
             </div>
 
             <div>
-                <h3 className="text-warning">A L L S E V E N C O N T I N E N T S T O T R A V E L By MARS_TRAVEL</h3>
+                <h3 className="text-warning">A L L _ S E V E N _ C O N T I N E N T S _ T O _ T R A V E L _ By _ MARS-TRAVEL</h3>
                 <Container >
                     {/* Stack the columns on mobile by making one full-width and the other half-width */}
                     <Row>
