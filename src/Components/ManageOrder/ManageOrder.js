@@ -5,7 +5,7 @@ const ManageOrder = () => {
     const [users, setUsers] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/users')
+        fetch('https://fathomless-plains-36328.herokuapp.com/users')
             .then(res => res.json())
             .then(data => setUsers(data));
     }, []);
