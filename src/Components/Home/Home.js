@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Accordion, Carousel, Col, Container, Row, Spinner } from 'react-bootstrap';
-import image1 from '../../images/c3.jpg'
-import image2 from '../../images/c1.jpg'
-import image3 from '../../images/c2.jpg'
-import image4 from '../../images/c4.jpg'
-import image5 from '../../images/c5.jpg'
-import image6 from '../../images/c6.jpg'
+import image1 from '../../images/c3.jpg';
+import image2 from '../../images/c1.jpg';
+import image3 from '../../images/c2.jpg';
+import image4 from '../../images/c4.jpg';
+import image5 from '../../images/c5.jpg';
+import image6 from '../../images/c6.jpg';
 import Body from './Body/Body';
+import bannner from '../../images/banner.png';
 
 const Home = () => {
 
@@ -19,95 +20,18 @@ const Home = () => {
     }, [])
     return (
         <div >
+            <div>
+                <img className="img-fluid" src={bannner} alt="Banner" />
+            </div>
             <div className="container">
-                <div>
-                    <Carousel fade className="">
-                        <Carousel.Item>
-                            <img
-                                className="d-block "
-                                src={image1}
-                                alt="venice"
-                                height="1080px"
-                                img-fluid
-                            />
-                            <Carousel.Caption>
-                                <h3 className="text-warning">Venice,ITALY</h3>
-                                <p>Venice, the capital of northern Italy’s Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                className="d-block "
-                                src={image2}
-                                alt="nafakhum"
-                                height="1080px"
-                                img-fluid
-                            />
 
-                            <Carousel.Caption>
-                                <h3 className="text-primary">Bandarban,BANGLADESH</h3>
-                                <p>Nafakhum is one of the most beautiful waterfall in Bandarban.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                className="d-block "
-                                src={image3}
-                                alt="santorini"
-                                height="1080px"
-                                img-fluid
-                            />
 
-                            <Carousel.Caption>
-                                <h3 className="text-dark">Santorini,GREECE</h3>
-                                <p>Santorini is one of the Cyclades islands in the Aegean Sea. It was devastated by a volcanic eruption in the 16th century BC.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                className="d-block "
-                                src={image4}
-                                alt="tsongo"
-                                height="1080px"
-                                img-fluid
-                            />
-
-                            <Carousel.Caption>
-                                <h3 className="text-dark">Tsongo Lake,SIKKIM</h3>
-                                <p>Tsomgo Lake, also known as Tsongmo Lake or Changgu Lake, is a glacial lake in the East Sikkim.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                className="d-block "
-                                src={image5}
-                                alt="shimla"
-                                height="1080px"
-                                img-fluid
-                            />
-
-                            <Carousel.Caption>
-                                <h3 className="text-warning">Shimla,Himachal Pradesh,INDIA</h3>
-                                <p>Shimla is the capital of the northern Indian state of Himachal Pradesh, in the Himalayan foothills.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                className="d-block "
-                                src={image6}
-                                alt="saint"
-                                height="1080px"
-                                img-fluid
-                            />
-
-                            <Carousel.Caption>
-                                <h3 className="text-warning">Saint Martin,BAY of BENGAL</h3>
-                                <p>St. Martin's Island is a small island in the northeastern part of the Bay of Bengal.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                    </Carousel>
+                <div data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <h1 className="text-primary">M A R S - T R A V E L - H E L P S - Y O U - W I T H</h1>
                 </div>
-                <h1 className="text-primary">M A R S - T R A V E L - H E L P S - Y O U - W I T H</h1>
+
 
 
                 {
@@ -187,30 +111,58 @@ const Home = () => {
                     {/* Stack the columns on mobile by making one full-width and the other half-width */}
                     <Row>
                         <Col xs={12} md={8}>
-                            <img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Map_of_Asia_with_flags.svg" alt="" /> ASIA
+                            <div data-aos="fade-right">
+                                <img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Map_of_Asia_with_flags.svg" alt="" /> ASIA
+                            </div>
+
+
                         </Col>
                         <Col xs={6} md={4}>
-                            <img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Map_of_Africa_with_flags.svg/300px-Map_of_Africa_with_flags.svg.png" alt="" /> Africa
+                            <div data-aos="fade-left">
+                                <img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Map_of_Africa_with_flags.svg/300px-Map_of_Africa_with_flags.svg.png" alt="" /> Africa
+                            </div>
+
+
                         </Col>
                     </Row>
 
-                    {/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
+
                     <Row>
                         <Col xs={6} md={4}>
-                            <img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Map_of_North_America_with_flags.svg/1200px-Map_of_North_America_with_flags.svg.png" alt="" /> North America
+                            <div data-aos="fade-right">
+                                <img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Map_of_North_America_with_flags.svg/1200px-Map_of_North_America_with_flags.svg.png" alt="" /> North America
+                            </div>
+
+
                         </Col>
                         <Col xs={6} md={4}>
-                            <img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Map_of_South_America_with_flags.svg/1200px-Map_of_South_America_with_flags.svg.png" alt="" /> South America
+                            <div data-aos="zoom-in-down">
+                                <img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Map_of_South_America_with_flags.svg/1200px-Map_of_South_America_with_flags.svg.png" alt="" /> South America
+                            </div>
                         </Col>
                         <Col xs={6} md={4}>
-                            <img className="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFgN5x5MoxJVPkGvm8Mxr9qxJ4E8THcb3WuJuphnFsSXoSIEPsPLujniqgnpnMS3u0dOE&usqp=CAU" alt="" /> Antarctica
+                            <div data-aos="fade-left">
+                                <img className="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFgN5x5MoxJVPkGvm8Mxr9qxJ4E8THcb3WuJuphnFsSXoSIEPsPLujniqgnpnMS3u0dOE&usqp=CAU" alt="" /> Antarctica
+                            </div>
+
                         </Col>
                     </Row>
 
                     {/* Columns are always 50% wide, on mobile and desktop */}
                     <Row>
-                        <Col xs={6}><img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Map_of_Asia_with_flags.svg" alt="" /> Europe</Col>
-                        <Col xs={6}><img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Map_of_Oceania_with_flags.svg/1200px-Map_of_Oceania_with_flags.svg.png" alt="" /> Australia </Col>
+                        <Col xs={6}>
+                            <div data-aos="fade-right">
+                                <img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Map_of_Asia_with_flags.svg" alt="" /> Europe
+                            </div>
+                        </Col>
+
+                        <Col xs={6}>
+                            <div data-aos="fade-left">
+
+                                <img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Map_of_Oceania_with_flags.svg/1200px-Map_of_Oceania_with_flags.svg.png" alt="" /> Australia
+                            </div>
+                        </Col>
+
                     </Row>
                 </Container>
             </div>

@@ -21,10 +21,15 @@ const Login = () => {
     return (
         <div className="login-form mt-5">
             <div className="mt-5">
-                <h2>Login</h2>
-                <p>Sign in with Google</p>
+                <div data-aos="zoom-in-down">
 
-                <button onClick={handleGoogleLogin} type="button" class="btn btn-outline-dark">Sign in</button>
+                    <img className="img-fluid" src="https://i.ibb.co/grkvRPx/account-concept-illustration-114360-399.jpg" alt="" />
+                </div>
+                <div data-aos="zoom-out-down"><h5>SIGN UP WITH GOOGLE</h5></div>
+
+
+
+                <button onClick={handleGoogleLogin} type="button" class="btn btn-outline-dark rounded-0 btn-lg"><i class="fab fa-google"></i> SIGN IN</button>
 
             </div>
         </div>

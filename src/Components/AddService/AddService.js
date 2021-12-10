@@ -21,7 +21,16 @@ const AddService = () => {
 
     return (
         <div className="add-service mb-5 pb-5">
-            <h3 className="text-secondary bg-light mb-5"> ADD NEW SERVICE </h3>
+            <div data-aos="zoom-out-up">
+                <img className="img-fluid p-3" src="https://image.flaticon.com/icons/png/512/376/376144.png" alt="" />
+            </div>
+
+            <div data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                <h3 className="text-secondary mb-5"> ADD NEW SERVICE </h3>
+            </div>
+
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input {...register("name")} placeholder="Name" required />
                 <textarea {...register("description")} placeholder="Description" required />

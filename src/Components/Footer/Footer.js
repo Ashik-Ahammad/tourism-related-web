@@ -1,32 +1,84 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import './Footer.css';
 import footer from '../../images/footer.png'
 
 const Footer = () => {
     return (
         <div className="mt-5 pt-5">
-            <hr />
-            <Container className="mt-5">
-                <Row justify-content-center >
+            <div class="section bg-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="">
+                                <h6 class="footer-heading text-uppercase text-white">Information</h6>
+                                <ul class="list-unstyled footer-link mt-4">
+                                    <li><a href="https://www.google.com.bd/maps/place/Mars+Tours+And+Travels/@23.8658887,90.4041178,17z/data=!3m1!4b1!4m5!3m4!1s0x3755c5ab44a942cf:0xda0b8f89f893de44!8m2!3d23.8658838!4d90.4063065" target="_blank" rel="noreferrer">Location</a></li>
 
-                    <Col>
-                        <h3 className="text-success">For your queries</h3>
-                        <h5 className="text-success">Email: mars2021travel@tourism.com</h5>
-                        <h5 className="text-success">Call <small>0424511</small></h5>
-                    </Col>
-                    <Col><img className=" mb-5 " height="200px" src={footer} alt="Footer" /></Col>
-                    <Col>
-                        <h3 className="text-success">Download Our App</h3>
-                        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
-                            <label class="btn btn-outline-primary" for="btncheck1">Play Store</label>
+                                    <li><a href="/aboutus" target="_blank" rel="noreferrer">Privacy Policy</a></li>
 
-                            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
-                            <label class="btn btn-outline-secondary" for="btncheck2">Apple Store</label>
+                                    <li><a href="https://www.facebook.com/messages/" target="_blank" rel="noreferrer">Send Message</a></li>
+
+                                </ul>
+                            </div>
                         </div>
-                    </Col>
-                </Row>
-            </Container>
+
+                        <div class="col-lg-3">
+                            <div class="">
+                                <h6 class="footer-heading text-uppercase text-white">Mars Traveler</h6>
+                                <ul class="list-unstyled footer-link mt-4">
+                                    <img className="img-fluid" src={footer} alt="" />
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <div class="">
+                                <h6 class="footer-heading text-uppercase text-white">Help</h6>
+                                <ul class="list-unstyled footer-link mt-4">
+                                    <li><a href="/login">Sign Up </a></li>
+                                    <li><a href="/login">Login</a></li>
+                                    <li><a href="/home">Back to home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="">
+                                <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
+                                <p class="contact-info mt-4">  Contact us if need help with anything</p>
+                                <p class="contact-info"> <i class="fas fa-phone-square-alt text-info p-1"></i> <span className="text-white">+8801123456789</span></p>
+                                <div class="mt-5">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item icon1">
+                                            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+                                                <i class="fab facebook footer-social-icon fa-facebook-f"></i>
+
+                                            </a>
+                                        </li>
+
+                                        <li class="list-inline-item icon1"><a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><i class="fab youtube footer-social-icon fa-youtube youtube-style"></i></a></li>
+
+                                        <li class="list-inline-item icon1">
+                                            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                                                <i class="fab linkedin footer-social-icon fa-linkedin linked-style"></i>
+                                            </a>
+                                        </li>
+
+                                        <li class="list-inline-item icon1"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank" rel="noreferrer"><i class="fas fa-envelope mail-style footer-social-icon"></i></a></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <p class="footer-alt mb-0 f-14">2021 <span className="text-warning">©</span> <span className="text-danger">Mars Travel</span> , All Rights Reserved</p>
+                </div>
+            </div>
         </div>
     );
 };

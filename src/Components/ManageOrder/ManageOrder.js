@@ -32,11 +32,20 @@ const ManageOrder = () => {
 
     return (
         <div className="container mb-5 pb-5">
-            <h4 className="text-primary">Orders and Customers</h4>
+            <div data-aos="fade-right">
+                <h4 className="text-primary">Orders and Customers</h4>
+            </div>
+
+            <div data-aos="zoom-in">
+                <img src="https://image.freepik.com/free-vector/woman-buying-tickets-online-flat-vector-concept_81522-1102.jpg" alt="" className="img-fluid" />
+            </div>
 
             <br />
 
-            <h3>Users Available : {users.length}</h3>
+            <div data-aos="fade-left">
+                <h3>Users & Orders Available : {users.length}</h3>
+            </div>
+
             <ul className="border border-3 bg-light text-dark">
                 {
                     users.map(user => <li className="my-3 border border-2"

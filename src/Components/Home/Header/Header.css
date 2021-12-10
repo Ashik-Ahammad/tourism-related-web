@@ -1,44 +1,15 @@
-/* .alignment{
-    margin-left: 200px;
-} */
-
-.nav-style1{
-    font-size: larger;
-    padding: 50px;
-    text-decoration: none;
-    color:#005792;
-}
-.nav-style2{
-    font-size: larger;
-    padding: 50px;
-    text-decoration: none;
-    color:#005792;
-}
-.nav-style3{
-    font-size: larger;
-    padding: 50px;
-    text-decoration: none;
-    color:#005792;
-}
-.nav-style4{
-    font-size: larger;
-    padding: 50px;
-    text-decoration: none;
-    color:#005792;
-    
-}
-
-.bg-color{
-    background-color:white ;
-}
-
-.text-style{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 5px;
-    
-    color:#005792;;
-    border: 1px solid white;
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@200&family=Roboto+Condensed&display=swap');
 
 
+.nav-style{
+   color: #2193B0;
+   font-family: 'Roboto Condensed', sans-serif;
+}
+.nav-style:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.toggle-color{
+    background-color: #005792;
+}

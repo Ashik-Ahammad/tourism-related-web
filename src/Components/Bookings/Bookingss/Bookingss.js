@@ -12,7 +12,7 @@ const Bookingss = () => {
     const [service, setService] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/packages/${serviceId}`)
+        fetch(`https://fathomless-plains-36328.herokuapp.com/packages/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data));
 
@@ -31,8 +31,6 @@ const Bookingss = () => {
             })
 
     };
-
-
 
     return (
 
